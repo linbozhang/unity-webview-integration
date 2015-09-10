@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
+import android.webkit.WebSettings.PluginState;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
@@ -59,7 +60,8 @@ public class ExtendedUnityPlayerActivity extends UnityPlayerActivity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setSupportZoom(false);
         webSettings.setJavaScriptEnabled(true);
-        webSettings.setPluginsEnabled(true);
+        webSettings.setPluginState(PluginState.ON);
+        //webSettings.setPluginsEnabled(true);
         //webSettings.setCacheMode(WebSettings.LOAD_NO_CACHE);
         // Set a dummy WebViewClient (which enables loading a new page in own WebView).
         mWebView.setWebViewClient(new WebViewClient(){});

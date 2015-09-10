@@ -8,7 +8,7 @@ private var note : String;
 
 // Show the web view (with margins) and load the index page.
 private function ActivateWebView() {
-    WebMediator.LoadUrl("http://keijiro.github.com/unity-webview-integration/index.html");
+    WebMediator.LoadUrl("http://www.baidu.com");
     WebMediator.SetMargin(12, Screen.height / 2 + 12, 12, 12);
     WebMediator.Show();
 }
